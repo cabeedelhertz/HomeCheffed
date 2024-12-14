@@ -24,17 +24,17 @@ struct MainTabView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $currentTab) {
-//                HomeView()
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .tag(TabViewItem.home)
+                HomeView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(TabViewItem.home)
                 
-//                ExploreView()
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .tag(TabViewItem.explore)
+                ExploreView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(TabViewItem.explore)
                 
-//                SettingsView()
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .tag(TabViewItem.settings)
+                SettingsView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(TabViewItem.settings)
             }
             
             CustomTabBar(animation: animation, currentTab: $currentTab)
