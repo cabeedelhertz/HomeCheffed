@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C0C0EBA52D0CF827001F3EBA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C0C0EBA42D0CF827001F3EBA /* FirebaseAnalytics */; };
+		C0C0EBA72D0CF827001F3EBA /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = C0C0EBA62D0CF827001F3EBA /* FirebaseAppCheck */; };
+		C0F674272D0DEB7500DD1D0F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C0F674262D0DEB7500DD1D0F /* FirebaseAuth */; };
+		C0F674292D0DEBB800DD1D0F /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C0F674282D0DEBB800DD1D0F /* FacebookCore */; };
+		C0F6744C2D0DF9C200DD1D0F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C0F6744B2D0DF9C200DD1D0F /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C01D981B2D0925BC0055FD57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C0EBA72D0CF827001F3EBA /* FirebaseAppCheck in Frameworks */,
+				C0F674272D0DEB7500DD1D0F /* FirebaseAuth in Frameworks */,
+				C0C0EBA52D0CF827001F3EBA /* FirebaseAnalytics in Frameworks */,
+				C0F6744C2D0DF9C200DD1D0F /* FirebaseFirestore in Frameworks */,
+				C0F674292D0DEBB800DD1D0F /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 				C01D98092D0925BB0055FD57 /* HomeCheffed */,
 				C01D981D2D0925BC0055FD57 /* HomeCheffedTests */,
 				C01D98272D0925BC0055FD57 /* HomeCheffedUITests */,
+				C0F674252D0DEB7500DD1D0F /* Frameworks */,
 				C01D98082D0925BB0055FD57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 				C01D98242D0925BC0055FD57 /* HomeCheffedUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F674252D0DEB7500DD1D0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +133,11 @@
 			);
 			name = HomeCheffed;
 			packageProductDependencies = (
+				C0C0EBA42D0CF827001F3EBA /* FirebaseAnalytics */,
+				C0C0EBA62D0CF827001F3EBA /* FirebaseAppCheck */,
+				C0F674262D0DEB7500DD1D0F /* FirebaseAuth */,
+				C0F674282D0DEBB800DD1D0F /* FacebookCore */,
+				C0F6744B2D0DF9C200DD1D0F /* FirebaseFirestore */,
 			);
 			productName = HomeCheffed;
 			productReference = C01D98072D0925BB0055FD57 /* HomeCheffed.app */;
@@ -171,7 +197,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					C01D98062D0925BB0055FD57 = {
 						CreatedOnToolsVersion = 16.1;
@@ -195,6 +221,11 @@
 			);
 			mainGroup = C01D97FE2D0925BB0055FD57;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C0C0EB9F2D0CF033001F3EBA /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C0F674182D0DE3AF00DD1D0F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C01D98082D0925BB0055FD57 /* Products */;
 			projectDirPath = "";
@@ -303,6 +334,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -364,6 +396,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -389,9 +422,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HomeCheffed/HomeCheffed.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeCheffed/Preview Content\"";
+				DEVELOPMENT_TEAM = T2D76AFFN3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -412,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = homecheffed.HomeCheffed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -426,9 +462,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HomeCheffed/HomeCheffed.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeCheffed/Preview Content\"";
+				DEVELOPMENT_TEAM = T2D76AFFN3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -449,7 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = homecheffed.HomeCheffed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -463,6 +502,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
@@ -485,6 +525,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
@@ -506,6 +547,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
@@ -527,6 +569,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
@@ -583,6 +626,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0C0EB9F2D0CF033001F3EBA /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.28.2;
+			};
+		};
+		C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		C0F674182D0DE3AF00DD1D0F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0C0EBA42D0CF827001F3EBA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C0C0EBA62D0CF827001F3EBA /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		C0F674262D0DEB7500DD1D0F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C0F674282D0DEBB800DD1D0F /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0F674182D0DE3AF00DD1D0F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		C0F6744B2D0DF9C200DD1D0F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0C0EBA02D0CF15E001F3EBA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C01D97FF2D0925BB0055FD57 /* Project object */;
 }
